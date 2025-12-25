@@ -1,0 +1,221 @@
+:root {
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+    --alert-color: #fff4ca;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --font-main: 'Poppins', sans-serif;
+    --spacing-xs: 0.4rem;
+    --spacing-sm: 0.8rem;
+    --spacing-md: 1.6rem;
+    --spacing-lg: 3.2rem;
+    --light-bg-color: #f7f7f7;
+    --border-radius-sm: 4px;
+    --border-radius-lg: 12px;
+    /* font size */
+    --fs-sm: 1.4rem;
+    /* 14px */
+    --fs-base: 1.6rem;
+    /* 16px */
+    --fs-lg: 2rem;
+    /* 20px */
+    --fs-xl: 3.2rem;
+    /* 32px */
+
+}
+
+
+@media (max-width: 1024px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .header-top,
+    .navbar {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+        font-size: 2rem;
+        z-index: 5;
+    }
+
+    .mobile-header__action-user {
+        font-size: 2rem;
+    }
+
+
+    .mobile-nav {
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        max-width: 35rem;
+        width: 100%;
+        padding: 2.5rem 4rem;
+        transform: translateX(-100%);
+        visibility: hidden;
+        transition: 0.25s var(--cubic-in);
+        z-index: 6;
+    }
+
+    .mobile-logo {
+        font-size: var(--fs-xl);
+        font-weight: 700;
+        font-family: var(--font-main);
+    }
+
+    .mobile-nav__close,
+    .mobile-header__toggle,
+    .mobile-header__action-user {
+        font-size: 24px;
+    }
+
+    .mobile-nav.active {
+        visibility: visible;
+        transform: translateX(0);
+        transition: 0.4s var(--cubic-out);
+    }
+
+    .mobile-nav__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-block-end: 3rem;
+
+    }
+
+    .mobile-nav__close {
+        font-size: 2rem;
+    }
+
+    .mobile-nav__content li {
+        color: #000000;
+        font-size: var(--fs-sm);
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: 0.25s ease;
+        padding-block: 1rem;
+    }
+
+    .mobile-nav__content li:is(:hover, :focus) {
+        color: #555555;
+    }
+
+    .overlay {
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        pointer-events: none;
+        transition: 0.25s ease;
+    }
+
+    .overlay.active {
+        background-color: hsla(0, 0%, 0%, 0.5);
+        pointer-events: all;
+    }
+
+    .mobile-header__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2%;
+    }
+
+    .mobile-header__wrapper.active {
+        position: fixed;
+        width: 100%;
+        top: -6rem;
+        bottom: auto;
+        transform: translateY(100%);
+        box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.15);
+        transition: 0.5s ease;
+        padding: 1rem 2%;
+
+    }
+
+    .mobile-header__wrapper.header-hide {
+        box-shadow: none;
+        transform: translateY(0);
+
+    }
+
+    .slider__content {}
+
+
+    .slider__content span {}
+
+    .slider__content h2 {
+        font-size: var(--fs-xl);
+    }
+
+
+
+}
+
+
+
+@media (max-width: 425px) {
+    .slider__content.slider__content--right {
+        left: 7rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .slider__content.slider__content--left {
+        right: 7rem;
+        text-align: center;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .slider__content--left span {
+        color: var(--white-color);
+    }
+
+    .slider__content--left h2 {
+        color: var(--white-color);
+    }
+
+    .slider__content--left button {
+        background-color: var(--white-color);
+        color: var(--black-color);
+    }
+
+    .slider__content--left button:hover {
+        background: #b99999;
+        opacity: 0.7;
+
+    }
+
+
+    .slider__content h2 {
+        font-size: var(--fs-base);
+
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .best-seller__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .product__icons {
+        right: 10px; 
+        opacity: 0.8;
+    }
+    
+    .product__name {
+        font-size: 13px;
+    }
+}

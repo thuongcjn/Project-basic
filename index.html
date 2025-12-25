@@ -1,16 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This is title</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Hello Word</h1>
-    <p>this is update</p>
-    <p>update the branch</p>
-    hehe
-    <script src="script.js"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE - Premium Headphone Accessories & Audio Gear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- preload image here -->
+
+    <!-- end preload -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/image/logo.svg" type="image/svg+xml">
+    <!-- custom link css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__alert">
+            <div class="alert__text">Free Shipping On All U.S. Orders $50+</div>
+        </div>
+        <div class="header-top">
+            <div class="header-top__container">
+                <!-- input -->
+                <div class="header-top__search-input">
+                    <input type="text" placeholder="Search product">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <!-- logo -->
+                <div class="header-top__logo">
+                    <a href="#">
+                        <img src="./assets/image/logo.png" alt="logo" width="160" height="40">
+                    </a>
+                </div>
+                <!-- header-action -->
+                <div class="header-top__actions">
+                    <div class="header-top__actions-item">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="header-top__actions-item">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="header-top__actions-item">
+                        <p>$0.00</p>
+                    </div>
+                    <div class="header-top__actions-item">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-link"><a href="#">Home</a></li>
+                <li class="navbar-link"><a href="#">Collection</a></li>
+                <li class="navbar-link"><a href="#">Shop</a></li>
+                <li class="navbar-link"><a href="#">Offer</a></li>
+                <li class="navbar-link"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <!-- mobile header -->
+        <div class="mobile-header">
+
+            <div class="mobile-header__container">
+                <!-- menu mobile -->
+                <div class="mobile-header__wrapper">
+                    <div class="mobile-header__toggle" nav-bar>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- logo -->
+                    <div class="mobile-header__logo">
+                        <a href="#">
+                            <img src="./assets/image/logo.png" alt="logo" width="120" height="30">
+                        </a>
+                    </div>
+                    <!-- header-action -->
+                    <div class="mobile-header__action">
+                        <div class="mobile-header__action-user">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-nav">
+                    <div class="mobile-nav__wrapper">
+                        <div class="mobile-nav__logo">
+                            <a href="#">
+                                <span class="mobile-logo">VIBE</span>
+                            </a>
+                        </div>
+                        <div class="mobile-nav__close" nav-bar>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+
+                    <ul class="mobile-nav__content">
+                        <li class="mobile-nav__link"><a href="#">Home</a></li>
+                        <li class="mobile-nav__link"><a href="#">Collection</a></li>
+                        <li class="mobile-nav__link"><a href="#">Shop</a></li>
+                        <li class="mobile-nav__link"><a href="#">Offer</a></li>
+                        <li class="mobile-nav__link"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- section body -->
+
+    <section class="hero-slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner-main">
+                    <img src="./assets/image/banner1.png" alt="1">
+                    <div class="slider__content slider__content--right">
+                        <span class="slider__subtitle">Introducing the TX-300 Pro</span>
+                        <h2 class="slider__title">High-Performance &<br /> Elegant Design</h2>
+                        <button class="slider__button">Shop the MW08 Sport</button>
+                    </div>
+
+                </div>
+                <div class="swiper-slide banner-second">
+                    <img src="./assets/image/banner2.png" alt="2">
+                    <div class="slider__content slider__content--left">
+                        <span class="slider__subtitle">High-end Earphones</span>
+                        <h2 class="slider__title">High Performance<br /> Sound Tool</h2>
+                        <button class="slider__button">Discover Collection</button>
+                    </div>
+                </div>
+                <div class="swiper-slide banner-third">
+                    <img src="./assets/image/banner3.png" alt="3">
+                    <div class="slider__content slider__content--right">
+                        <span class="slider__subtitle">High-end Earphones</span>
+                        <h2 class="slider__title">Premium Audio<br /> Products</h2>
+                        <button class="slider__button">Discover Collection</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </div>
+
+    </section>
+    <section class="new-collection">
+        <div class="new-collection__title">
+            <span class="new-collection__title--sub">THE ART OF LISTENING</span>
+            <div class="new-collection__title--main">NEW COLLECTION</div>
+            <span class="new-collection__title--sub">Discover the limited edition series designed for true
+                audiophiles</span>
+        </div>
+
+        <div class="new-collection__list">
+            <article class="collection-item">
+                <img src="./assets/image/collection.png" alt="collection" class="collection-item__img">
+                <div class="collection-item__content">
+                    <span class="collection-item__text">Lightweight luxury <br /> earphones</span>
+                    <i class="fa-solid fa-chevron-right collection-item__icon"></i>
+                </div>
+            </article>
+
+            <article class="collection-item">
+                <img src="./assets/image/collection2.png" alt="collection" class="collection-item__img">
+                <div class="collection-item__content">
+                    <span class="collection-item__text">Upgrade your listening <br /> experience</span>
+                    <i class="fa-solid fa-chevron-right collection-item__icon"></i>
+                </div>
+            </article>
+
+            <article class="collection-item">
+                <img src="./assets/image/collection3.png" alt="collection" class="collection-item__img">
+                <div class="collection-item__content">
+                    <span class="collection-item__text">Discover exclusive <br /> collaborations</span>
+                    <i class="fa-solid fa-chevron-right collection-item__icon"></i>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="best-seller">
+        <div class="best-seller__header">
+            <h2 class="best-seller__title">BEST SELLER</h2>
+        </div>
+
+        <div class="best-seller__list">
+            <div class="product">
+                <div class="product__media">
+                    <img src="./assets/image/headpone.jpg" alt="product" class="product__image">
+
+                    <div class="product__icons">
+                        <i class="product__icon fa-solid fa-bag-shopping"></i>
+                        <i class="product__icon fa-regular fa-heart"></i>
+                        <i class="product__icon fa-solid fa-arrows-rotate"></i>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <h3 class="product__name">
+                        MH40 Wireless (Silver Metal / Navy Coated Canvas)
+                    </h3>
+                    <span class="product__price">$299.0</span>
+                    <div class="product__actions">
+                        <button class="product__btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="product">
+                <div class="product__media">
+                    <img src="./assets/image/headpone.jpg" alt="product" class="product__image">
+
+                    <div class="product__icons">
+                        <i class="product__icon fa-solid fa-bag-shopping"></i>
+                        <i class="product__icon fa-regular fa-heart"></i>
+                        <i class="product__icon fa-solid fa-arrows-rotate"></i>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <h3 class="product__name">
+                        MH40 Wireless (Silver Metal / Navy Coated Canvas)
+                    </h3>
+                    <span class="product__price">$299.0</span>
+                    <div class="product__actions">
+                        <button class="product__btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="product">
+                <div class="product__media">
+                    <img src="./assets/image/headpone.jpg" alt="product" class="product__image">
+
+                    <div class="product__icons">
+                        <i class="product__icon fa-solid fa-bag-shopping"></i>
+                        <i class="product__icon fa-regular fa-heart"></i>
+                        <i class="product__icon fa-solid fa-arrows-rotate"></i>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <h3 class="product__name">
+                        MH40 Wireless (Silver Metal / Navy Coated Canvas)
+                    </h3>
+                    <span class="product__price">$299.0</span>
+                    <div class="product__actions">
+                        <button class="product__btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+              <div class="product">
+                <div class="product__media">
+                    <img src="./assets/image/headpone.jpg" alt="product" class="product__image">
+
+                    <div class="product__icons">
+                        <i class="product__icon fa-solid fa-bag-shopping"></i>
+                        <i class="product__icon fa-regular fa-heart"></i>
+                        <i class="product__icon fa-solid fa-arrows-rotate"></i>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <h3 class="product__name">
+                        MH40 Wireless (Silver Metal / Navy Coated Canvas)
+                    </h3>
+                    <span class="product__price">$299.0</span>
+                    <div class="product__actions">
+                        <button class="product__btn-add">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- footer -->
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
 </html>

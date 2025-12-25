@@ -1,0 +1,58 @@
+/* 1. Thay đổi box-sizing để padding và border không làm tăng kích thước phần tử */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Loại bỏ margin và padding mặc định của tất cả các thẻ */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 3. Cải thiện trải nghiệm cuộn và đặt chiều cao mặc định */
+html {
+  scroll-behavior: smooth;
+  height: -webkit-fill-available;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* 4. setting hình ảnh*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Loại bỏ kiểu dáng mặc định của danh sách  */
+ul, ol {
+  list-style: none;
+}
+
+/* 6. Loại bỏ gạch chân mặc định của link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Kế thừa font cho các thành phần form */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Loại bỏ viền khi focus */
+*:focus {
+  outline: none;
+}
+
+/* 9. Đảm bảo table hiển thị gọn gàng */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
